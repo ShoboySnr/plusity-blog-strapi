@@ -2,12 +2,18 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "strapi-mongoose",
+      "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "uri": "${process.env.DATABASE_URI || ''}"
+        "host": "ds111529.mlab.com",
+        "port": 11529,
+        "database": "heroku_vbtlkcrh",
+        "username": "heroku_vbtlkcrh",
+        "password": "f6g5918395b1mb3ra6qtk8673s"
       },
-      "options": {}
+      "options": {
+        "ssl": true
+      }
     }
   }
 }
